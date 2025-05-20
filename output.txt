@@ -1,0 +1,86 @@
+addTeam returns:
+	Successfully added team t100
+addTeam returns:
+	Successfully added team t101
+addTeam returns:
+	Successfully added team t102
+addTeam returns:
+	Successfully added team t103
+addCoach returns:
+	Successfully added Coach C100
+addCoach returns:
+	Successfully added Coach C101
+addCoach returns:
+	Successfully added Coach C102
+addSponsor returns:
+	Successfully added Sponsor S100
+addSponsor returns:
+	Successfully added Sponsor S101
+addSponsor returns:
+	Successfully added Sponsor S102
+addTeamToSponsor returns:
+	Sponsor S100 added to team t100
+addTeamToSponsor returns:
+	Sponsor S101 added to team t101
+addTeamToSponsor returns:
+	Sponsor S102 added to team t102
+addPlayer returns:
+	Successfully added Player p1001
+addPlayer returns:
+	Successfully added Player p1002
+addPlayer returns:
+	Successfully added Player p1003
+addPlayer returns:
+	Successfully added Player p1004
+addPlayer returns:
+	Successfully added Player p1005
+addMatchResult returns:
+	Successfully added MatchResult
+addMatchResult returns:
+	Successfully added MatchResult
+addMatch returns:
+	Successfully added match M2001
+addMatch returns:
+	Successfully added match M2002
+addCustomer returns:
+	Successfully added Customer C2001
+addCustomer returns:
+	Successfully added Customer C2002
+addCustomer returns:
+	Successfully added Customer C2003
+addCustomer returns:
+	Successfully added Customer C2004
+addCostumerToMatch returns:
+	Customer C2001 added to match M2001
+addCostumerToMatch returns:
+	Customer C2002 added to match M2001
+addCostumerToMatch returns:
+	Customer C2003 added to match M2002
+addCostumerToMatch returns:
+	Customer C2004 added to match M2002
+addMatchToPlayer returns:
+	Match M2001 added to player p1001
+addMatchToPlayer returns:
+	Match M2001 added to player p1002
+addMatchToPlayer returns:
+	Match M2002 added to player p1003
+addMatchToPlayer returns:
+	Match M2002 added to player p1005
+addTrophy returns:
+	Successfully added Trophy PLAYER_OF_THE_YEAR
+addTrophy returns:
+	Successfully added Trophy PLAYER_OF_THE_YEAR
+addTrophy returns:
+	Successfully added Trophy TEAM_OF_THE_YEAR
+addTrophy returns:
+	Successfully added Trophy COACH_OF_THE_YEAR
+addTrophy returns:
+	Successfully added Trophy BEST_PLAYER_SHOOTS
+addTrophy returns:
+	Successfully added Trophy GOLDEN_GLOVE_PLAYER
+getEntityWithMostTrophies returns: Name: Alex Turner (C100), Age: 45, Country: GERMANY, Team: Thunderbolts, Level: INTERMEDIATE
+getSponsorsOfGermany returns: [Name: Max Müller (S100), Age: 55, Country: GERMANY [Nickname: MaxPower, Sponsored Teams: 1]]
+getMostActivePlayer returns: Name: John Smith (p1002), Age: 24, Country: ENGLAND, Number: 10, Position: ATTACKER, Fans: 5200, Team: Team [t101] - RedDragons | Country: ENGLAND | Coach: Sarah Wells | Players: 1.
+getTheBestHomeMatch returns: Match ID: M2001 | Date: 01/07/2024 | Stadium: Unknown. (Unknown.) | Tickets: 54000 | Result: Thunderbolts 3 - 2 RedDragons
+getTheBestCustomer returns: [Name: Emma Brown (C2001), Age: 30, Country: GERMANY, Email: http://emma.brown@example.com, Level: BEGINNER, Favorite Team: Thunderbolts, Name: Gio Moretti (C2004), Age: 31, Country: ITALY, Email: http://gio.m@example.com, Level: INTERMEDIATE, Favorite Team: FireFoxes, Name: Noah Wilson (C2002), Age: 33, Country: ENGLAND, Email: http://noah.w@example.com, Level: PROFESSIONAL, Favorite Team: RedDragons, Name: Clara Dubois (C2003), Age: 35, Country: FRANCE, Email: http://clara.d@example.com, Level: ADVANCED, Favorite Team: BlueWhales]
+getTeamsBestHomeScore returns: [Team [t100] - Thunderbolts | Country: GERMANY | Coach: Alex Turner | Players: 2]

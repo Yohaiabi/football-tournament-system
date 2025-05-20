@@ -1,0 +1,96 @@
+/ -------------------------------------------------------------------------------------------------------------
+Create Teams (String tNumber, String tName, int fansCount, String represents)
+/ -------------------------------------------------------------------------------------------------------------
+addTeam t100 Thunderbolts 45000 GERMANY
+addTeam t101 RedDragons 38000 ENGLAND
+addTeam t102 BlueWhales 51000 FRANCE
+addTeam t103 FireFoxes 47000 ITALY
+
+/ -------------------------------------------------------------------------------------------------------------
+Create Coaches (String pId, String fullName, int age, String nation, Team mainTeam, E_Levels level)
+/ -------------------------------------------------------------------------------------------------------------
+addCoach C100 Alex Turner 45 GERMANY t100 2
+addCoach C101 Sarah Wells 40 ENGLAND t101 ADVANCED
+addCoach C102 Luca Bianchi 42 ITALY t103 3
+
+/ -------------------------------------------------------------------------------------------------------------
+Create Sponsors (String pId, String fullName, int age, String nation, String nickName)
+/ -------------------------------------------------------------------------------------------------------------
+addSponsor S100 Max Müller 55 GERMANY MaxPower
+addSponsor S101 Linda Green 50 ENGLAND LG
+addSponsor S102 Jean Dupont 53 FRANCE JD
+
+/ -------------------------------------------------------------------------------------------------------------
+Add Sponsors to Teams (Team team, Sponsor sponsor)
+/ -------------------------------------------------------------------------------------------------------------
+addTeamToSponsor t100 S100
+addTeamToSponsor t101 S101
+addTeamToSponsor t102 S102
+
+/ -------------------------------------------------------------------------------------------------------------
+Create Players (String pId, String fullName, int age, String nation, int pNum,
+                E_Position position, int fansCount, Team currentTeam)
+/ -------------------------------------------------------------------------------------------------------------
+addPlayer p1001 Tom Becker 26 GERMANY 7 MIDFIELDER 4200 t100
+addPlayer p1002 John Smith 24 ENGLAND 10 ATTACKER 5200 t101
+addPlayer p1003 Marco Rossi 28 ITALY 9 DEFENDER 3100 t103
+addPlayer p1004 David Klein 29 GERMANY 8 DEFENDER 6000 t100
+addPlayer p1005 Pierre Legrand 27 FRANCE 11 GOALKEEPER 4900 t102
+
+/ -------------------------------------------------------------------------------------------------------------
+Add MatchResults (Team homeTeam, Team awayTeam, String matchID, int totalTime, boolean penaltyEnd,
+                   int homeTeamScore, int awayTeamScore)
+/ -------------------------------------------------------------------------------------------------------------
+addMatchResult t100 t101 M2001 90 false 3 2
+addMatchResult t102 t103 M2002 120 true 2 2
+
+/ -------------------------------------------------------------------------------------------------------------
+Add Matches
+/ -------------------------------------------------------------------------------------------------------------
+addMatch M2001 01/07/2024 NationalStadium 54000
+addMatch M2002 02/07/2024 PGE_Arena 39000
+
+/ -------------------------------------------------------------------------------------------------------------
+Add Customers (String pId, String fullName, int age, String nation, URL email, E_Levels level,
+               Team favoriteTeam)
+/ -------------------------------------------------------------------------------------------------------------
+addCustomer C2001 Emma Brown 30 GERMANY http://emma.brown@example.com BEGINNER t100
+addCustomer C2002 Noah Wilson 33 ENGLAND http://noah.w@example.com PROFESSIONAL t101
+addCustomer C2003 Clara Dubois 35 FRANCE http://clara.d@example.com ADVANCED t102
+addCustomer C2004 Gio Moretti 31 ITALY http://gio.m@example.com INTERMEDIATE t103
+
+/ -------------------------------------------------------------------------------------------------------------
+Customers Attend Matches
+/ -------------------------------------------------------------------------------------------------------------
+addCostumerToMatch C2001 M2001
+addCostumerToMatch C2002 M2001
+addCostumerToMatch C2003 M2002
+addCostumerToMatch C2004 M2002
+
+/ -------------------------------------------------------------------------------------------------------------
+Players in Matches
+/ -------------------------------------------------------------------------------------------------------------
+addMatchToPlayer M2001 p1001
+addMatchToPlayer M2001 p1002
+addMatchToPlayer M2002 p1003
+addMatchToPlayer M2002 p1005
+
+/ -------------------------------------------------------------------------------------------------------------
+Add Trophies
+/ -------------------------------------------------------------------------------------------------------------
+addTrophy PLAYER_OF_THE_YEAR p1001 03/07/2024
+addTrophy PLAYER_OF_THE_YEAR p1002 04/07/2024
+addTrophy TEAM_OF_THE_YEAR t100 05/07/2024
+addTrophy COACH_OF_THE_YEAR C100 06/07/2024
+addTrophy BEST_PLAYER_SHOOTS p1004 07/07/2024
+addTrophy GOLDEN_GLOVE_PLAYER p1005 08/07/2024
+
+/ -------------------------------------------------------------------------------------------------------------
+Check All The Gets Functions
+/ -------------------------------------------------------------------------------------------------------------
+getEntityWithMostTrophies
+getSponsorsOfGermany
+getMostActivePlayer
+getTheBestHomeMatch
+getTheBestCustomer
+getTeamsBestHomeScore
